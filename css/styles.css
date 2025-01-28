@@ -44,22 +44,43 @@ img {
   color: #333;
   font-weight: 500;
 }
+
+/* BUTTON GROUP */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between buttons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 1.5rem; /* Space above the buttons */
+}
+
+/* BUTTON STYLES */
+.btn-primary,
+.btn-secondary {
+  padding: 0.7rem 1.2rem; /* Standardized padding */
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
 .btn-primary {
   background-color: #007BFF;
   color: #fff !important;
-  padding: 0.7rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
 }
 .btn-primary:hover {
-  opacity: 0.9;
+  background-color: #0056b3;
 }
+
+/* SECONDARY BUTTON */
 .btn-secondary {
   background-color: #555;
   color: #fff !important;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
+}
+.btn-secondary:hover {
+  background-color: #333;
 }
 
 /* HERO */
@@ -207,6 +228,11 @@ img {
   color: #888;
   margin-left: 0.5rem;
 }
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
 
 /* FAQ */
 .faq {
@@ -254,4 +280,15 @@ img {
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-box {
+    padding: 1.5rem;
+  }
 }
