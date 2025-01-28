@@ -1,0 +1,257 @@
+/* RESET / BASIC STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: #f6f6f6;
+  padding: 1rem 0;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff !important;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.btn-secondary {
+  background-color: #555;
+  color: #fff !important;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background-color: #fafafa;
+  padding: 3rem 0;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* WHY VALIDATE */
+.why-validate {
+  padding: 3rem 0;
+  text-align: center;
+}
+.why-validate h2 {
+  margin-bottom: 1rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.feature-item {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.feature-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+  background-color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+.how-it-works h2 {
+  margin-bottom: 1rem;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.step {
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+}
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007BFF;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #fafafa;
+  padding: 3rem 0;
+  text-align: center;
+}
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.testimonial-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* COMPARE */
+.compare {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.compare-grid h3 {
+  margin-bottom: 1rem;
+}
+.compare-grid ul {
+  list-style: none;
+}
+.compare-grid ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* PRICING */
+.pricing {
+  background-color: #fafafa;
+  padding: 3rem 0;
+  text-align: center;
+}
+.pricing h2 {
+  margin-bottom: 1rem;
+}
+.pricing-box {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.pricing-box ul {
+  list-style: none;
+  text-align: left;
+  margin: 1rem 0 1.5rem 0;
+  padding-left: 0;
+}
+.pricing-box li {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+/* FAQ */
+.faq {
+  padding: 3rem 0;
+}
+.faq-item {
+  margin-bottom: 2rem;
+}
+.faq-item h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* FINAL CTA */
+.final-cta {
+  background-color: #f6f6f6;
+  padding: 3rem 0;
+  text-align: center;
+}
+.final-cta h2 {
+  margin-bottom: 1rem;
+}
+.final-cta p {
+  margin-bottom: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.footer-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
