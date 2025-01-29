@@ -206,31 +206,30 @@ img {
 }
 
 .pricing-header h2 {
-  color: #4F46E5;
-  font-size: 1rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  color: #111827;
   margin-bottom: 1rem;
 }
 
 .pricing-header p {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #111827;
+  font-size: 1.125rem;
+  color: #6B7280;
+  margin-bottom: 2rem;
 }
 
 .pricing-box.dark {
   background: #111827;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 2.5rem;
   color: white;
   max-width: 32rem;
   margin: 0 auto;
-  border: 1px solid #1F2937;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .pricing-box.dark h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -251,9 +250,10 @@ img {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #9CA3AF;
+  color: #D1D5DB;
   font-size: 0.875rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
 .pricing-box.dark .checkmark {
@@ -266,18 +266,18 @@ img {
 .pricing-box.dark .price {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
-  margin: 1.5rem 0;
+  gap: 0.75rem;
+  margin: 2rem 0;
 }
 
 .pricing-box.dark .current-price {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: white;
 }
 
 .pricing-box.dark .old-price {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #6B7280;
   text-decoration: line-through;
 }
@@ -285,18 +285,33 @@ img {
 .pricing-box.dark .note {
   color: #9CA3AF;
   font-size: 0.875rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .pricing-box.dark .btn-primary {
+  display: block;
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-align: center;
+  font-weight: 600;
   transition: background-color 0.2s;
+  text-decoration: none;
 }
 
 .pricing-box.dark .btn-primary:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* Override the global btn-primary styles for the pricing box */
+.pricing-box.dark .btn-primary {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.pricing-box.dark .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* FAQ */
