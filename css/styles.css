@@ -195,43 +195,108 @@ img {
 
 /* PRICING */
 .pricing {
-  background-color: #fafafa;
-  padding: 3rem 0;
+  padding: 4rem 0;
+  background: white;
+}
+
+.pricing-header {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
 }
-.pricing h2 {
+
+.pricing-header h2 {
+  color: #4F46E5;
+  font-size: 1rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
-.pricing-box {
-  background-color: #fff;
+
+.pricing-header p {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.pricing-box.dark {
+  background: #111827;
+  border-radius: 1.5rem;
   padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto 0 auto;
-  border-radius: 5px;
-  border: 1px solid #eee;
+  color: white;
+  max-width: 32rem;
+  margin: 0 auto;
+  border: 1px solid #1F2937;
 }
-.pricing-box ul {
-  list-style: none;
-  text-align: left;
-  margin: 1rem 0 1.5rem 0;
-  padding-left: 0;
-}
-.pricing-box li {
-  margin-bottom: 0.5rem;
-}
-.price {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.old-price {
-  text-decoration: line-through;
-  color: #888;
-  margin-left: 0.5rem;
-}
-.note {
-  font-size: 0.9rem;
-  color: #555;
+
+.pricing-box.dark h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.pricing-box.dark .description {
+  color: #9CA3AF;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.pricing-box.dark .feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.pricing-box.dark .feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-box.dark .checkmark {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.pricing-box.dark .price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.pricing-box.dark .current-price {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.pricing-box.dark .old-price {
+  font-size: 1.125rem;
+  color: #6B7280;
+  text-decoration: line-through;
+}
+
+.pricing-box.dark .note {
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  margin: 2rem 0;
+}
+
+.pricing-box.dark .btn-primary {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.pricing-box.dark .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* FAQ */
