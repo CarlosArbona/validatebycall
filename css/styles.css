@@ -127,12 +127,16 @@ img {
 
 /* Update pricing styles */
 .pricing {
-  background-color: #fafafa;
+  text-align: center;
   padding: 3rem 0;
+  background-color: #fafafa;
 }
 
-.pricing {
-  text-align: center;
+.pricing .container > h2,
+.pricing .container > p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pricing h2 {
@@ -181,9 +185,9 @@ img {
 /* Update the pricing box button */
 .pricing-box .btn-primary {
   display: inline-block;
+  padding: 0.7rem 1.2rem; /* Match the nav button padding */
   width: auto;
-  min-width: 200px;
-  padding: 0.7rem 1.5rem;
+  min-width: 0; /* Remove min-width */
   margin-top: 1.5rem;
 }
 
