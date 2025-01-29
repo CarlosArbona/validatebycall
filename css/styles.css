@@ -127,42 +127,53 @@ img {
 
 /* Update pricing styles */
 .pricing {
-  padding: 4rem 0;
-  background: white;
+  background-color: #fafafa;
+  padding: 3rem 0;
+}
+
+.pricing {
+  text-align: center;
 }
 
 .pricing h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #111827;
-  text-align: center;
   margin-bottom: 1rem;
 }
 
-.pricing > .container > p {
-  text-align: center;
-  color: #6B7280;
-  margin-bottom: 3rem;
+.pricing-box {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  border-radius: 5px;
+  border: 1px solid #eee;
 }
 
-.pricing-box.dark {
-  background: #111827;
-  border-radius: 1.5rem;
-  padding: 2.5rem;
-  color: white;
-  max-width: 32rem;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.pricing-box ul {
+  list-style: none;
+  text-align: left;
+  margin: 1rem 0 1.5rem 0;
+  padding-left: 0;
 }
 
-/* Make sure the pricing box button is styled correctly */
-.pricing-box.dark .btn-primary {
-  background: rgba(255, 255, 255, 0.1) !important;
-  margin-top: 2rem;
+.pricing-box li {
+  margin-bottom: 0.5rem;
 }
 
-.pricing-box.dark .btn-primary:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 /* HERO */
